@@ -59,7 +59,7 @@ function Navbar() {
         <div>
             <div className="Navbar" id='Navbar'>
                 <div className="nav-logo animate__fadeInLeft ">
-                    <a href="#">  <img width="80px" height="80px" src={logo} alt="Logo" /></a>
+                    <a href="/">  <img width="80px" height="80px" src={logo} alt="Logo" /></a>
                 </div>
 
                 <div id="hamburger-menu" onClick={handleMenuOpen}>

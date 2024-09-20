@@ -53,7 +53,7 @@ function Footer() {
             </div>
 
             <div className='logo'>
-            <a href="#">  <img width="80px" height="80px" src={logo} alt="Logo" /></a>
+            <a href="/">  <img width="80px" height="80px" src={logo} alt="Logo" /></a>
             </div>
         </div>
         

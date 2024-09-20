@@ -16,7 +16,7 @@ import right from '../Images/right-arrow-svgrepo-com.svg'
 import { useNavigate } from 'react-router-dom';
 
 import Blog from '../Blob'
-import BlogCss from '../Blob.css';
+import '../Blob.css';
 import '../ABOUT-ME/AboutMe.css'
 
 

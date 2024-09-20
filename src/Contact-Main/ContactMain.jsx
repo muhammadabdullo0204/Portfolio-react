@@ -11,7 +11,7 @@ function ContactMain() {
   const [successMessage, setSuccessMessage] = useState(''); 
   const navigate = useNavigate();
 
-  const handleEmailChange = (e) => setEmail(e.target.value);
+  // const handleEmailChange = (e) => setEmail(e.target.value);
 
   const validate = () => {
     const error = {};
