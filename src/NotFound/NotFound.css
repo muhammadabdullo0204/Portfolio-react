@@ -1,0 +1,253 @@
+.macbook-img {
+  margin: 0 auto;
+  width: 760px;
+  height: 505px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  z-index: 5;
+  margin-top: 100px;
+}
+.ellipse {
+    position: absolute;
+    left: 480px;
+  }
+  
+  .frame {
+    position: absolute;
+    right: 490px;
+  }
+
+.macbook-imgs {
+  position: absolute;
+  z-index: 1;
+}
+
+.macbook-img .artwork {
+  position: relative;
+  top: 15px;
+  z-index: 2;
+
+  width: 730px;
+  height: 470px;
+  border: solid;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+
+}
+.artwork h1, p{
+  
+    font-weight: bold;
+}
+.artwork h1{
+    font-size: 60px;
+    font-family: sans-serif;
+}
+.artwork p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+.macbook-img .shape {
+  position: relative;
+  top: 35px;
+}
+
+.camera {
+  position: relative;
+  top: 5px;
+  z-index: 3;
+}
+
+.touchpad {
+  z-index: 1;
+  position: relative;
+  top: 5px;
+}
+
+.shape-2 {
+  position: relative;
+  top: 15px;
+}
+
+
+
+
+
+.animation {
+    display: flex;
+    margin: 0 0.5rem;
+    animation: animation 2s; 
+}
+
+@keyframes animation {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -20%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+
+.animation-orta {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: animation-orta 1s; 
+}
+
+@keyframes animation-orta {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -30%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.animation-chap {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: animation-chap 1s; 
+}
+
+@keyframes animation-chap {
+    from {
+        opacity: 0;
+        transform: translate3d(-30%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+
+@keyframes animation-ong {
+    from {
+        opacity: 0;
+        transform: translate3d(30%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.animation-ong {
+    display: inline-block; 
+    margin: 0 0.5rem;
+    animation: animation-ong 1s;
+}
+
+
+
+
+@media only screen and (max-width:768px) {
+    
+    .ellipse{
+        display: none;
+    }
+    .frame{
+        display: none;
+    }
+
+    .camera{
+        top: 10px;
+    }
+    .macbook-imgs{
+
+        width: 600px;
+    }
+
+    .macbook-img .artwork{
+
+        width: 570px;
+        height: 380px;
+    }
+    .macbook-img .shape-2{
+        width: 700px;
+        top: 0px;
+    }
+
+    .macbook-img .shape{
+        width: 700px;
+        top: 19px;
+    }
+    .touchpad{
+top: -5px;
+    }
+
+}
+
+@media only screen and (max-width:480px) {
+    .macbook-img{
+        width: 480px;
+    }
+    .artwork{
+      
+    }
+    .artwork h1{
+
+        font-size: 35px;
+        position: relative;
+        top: 25px;
+      
+    }
+    .artwork .slides-button button{
+        width: 150px;
+        height: 40px;
+        bottom: 45px;
+    }
+    .artwork .slides-button button img{
+        width: 20px;
+        height: 20px;
+    }
+    .artwork p{
+        font-size: 22px;
+        position: relative;
+        top: 25px;
+    }
+    .camera{
+        top: 10px;
+    }
+    .macbook-imgs{
+
+        width: 320px;
+    }
+
+    .macbook-img .artwork{
+
+        width: 300px;
+        height: 190px;
+    }
+    .macbook-img .shape-2{
+        width: 400px;
+        top: 0px;
+    }
+
+    .macbook-img .shape{
+        width: 400px;
+        top: 19px;
+    }
+    .touchpad{
+top: -5px;
+    }
+    
+}

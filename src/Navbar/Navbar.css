@@ -1,0 +1,518 @@
+:root {
+    --first: rgb(16, 14, 22);
+    --second: rgb(29, 29, 35);
+    --third: rgb(82, 179, 157);
+    --fourth: #0bceaf;
+    --fifth: rgb(113, 112, 116);
+    --sixth: rgb(55, 123, 111);
+    --seventh: #141214;
+
+
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.Navbar {
+    position: relative;
+    display: flex;
+    padding: 40px;
+    width: 100%;
+    background-color: #141214;
+    justify-content: space-around;
+  
+    align-items: center;
+    box-shadow: 7px 5px 15px -4px rgba(0, 0, 0, 0.75);
+}
+
+
+
+.nav-logo {
+    font-size: 32px;
+}
+
+
+#mobile-menu{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    height: 100vh;
+
+    flex-direction: column;
+    color: white;
+    flex-wrap: wrap;
+
+}
+.menu-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+    align-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+
+    position: absolute;
+    margin-bottom: 50%;
+  
+}
+
+.menu{
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: bold;
+    position: relative;
+
+
+    
+}
+
+#hamburger-cross {
+    display: block;
+    color: white;
+    cursor: pointer;
+    font-size: 55px;
+    position: relative;
+  
+}
+
+
+
+.mobile-nav-items{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+
+    list-style: none;
+    margin: 10px;
+    padding: 10px 20px;
+
+    text-align: start;
+    transition: all .3s ease;
+    filter: blur(0px);
+    transform: scale(1);
+
+
+}
+
+
+.mobile-nav-items button{
+    color: white;
+    text-decoration: none;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 64px;
+
+    margin: 15px;
+    border: none;
+    border-radius: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .3s ease;
+    position: relative;
+
+
+}
+
+.mobile-nav-items button:hover{
+    transform: scale(1.1);
+}
+.mobile-nav-items button::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.17rem;
+    background-color: white;
+    left: 0;
+    bottom: 0;
+    transform-origin: 0% 100%;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.mobile-nav-items button:hover::after {
+    transform: scaleX(1);
+}
+
+.mobile-nav-items button::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.17rem;
+    background-color: white;
+    right: 0;
+    top: 0;
+    transform-origin: 100% 100%;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.mobile-nav-items button:hover::before {
+    transform: scaleX(1);
+}
+
+.blur {
+    filter: blur(5px);
+    transform: scale(0.9);
+  }
+ 
+
+
+
+
+#hamburger-menu{
+    width: 40px;
+    display: block;
+    color: white;
+    cursor: pointer;
+    height: 35px;
+    
+
+}
+#hamburger-menu div{
+    width: 40px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: flex-end;
+}
+#hamburger-menu div:nth-child(2){
+
+    content: "";
+    position: absolute;
+    top: 48%;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 15px;
+
+}
+#hamburger-menu  div:nth-child(3){
+
+    content: "";
+    position: absolute;
+    bottom:40%;
+    width: 20px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 15px;
+
+}
+
+@media only screen and (max-width: 859px) {
+    #mobile-menu {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: transform 0.3s ease;
+        transform: translateX(-100%);
+        gap: 0;
+    }
+
+   .menu{
+  
+
+    }
+
+
+    .mobile-nav-items button {
+        text-align: center;
+        position: relative;
+        list-style: none;
+ 
+        cursor: pointer;
+        color: white;
+        text-decoration: none;
+        font-size:  45px ;
+        margin: 15px;
+    }
+
+  
+
+
+    .mobile-nav-items button::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 0.17rem;
+        background-color: white;
+        left: 0;
+        bottom: 0;
+        transform-origin: 0% 100%;
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+    }
+    
+    .mobile-nav-items button:hover::after {
+        transform: scaleX(1);
+    }
+    
+    .mobile-nav-items button::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 0.17rem;
+        background-color: white;
+        right: 0;
+        top: 0;
+        transform-origin: 100% 100%;
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+    }
+    
+    .mobile-nav-items button:hover::before {
+        transform: scaleX(1);
+    }
+   
+
+
+
+  
+
+    #hamburger-cross {
+   
+        font-size: 40px;
+    
+    }
+
+    #hamburger-menu {
+        display: block;
+        color: white;
+        cursor: pointer;
+        font-size: 24px;
+        
+    }
+}
+
+
+
+
+
+
+
+
+.mobile-menu-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-end;
+    gap: 150px;
+    height: 524px;
+
+}
+
+
+.mobile-nav-items-2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-end;
+  
+    margin-top: 31%;
+    gap: 20px;
+}
+
+.mobile-nav-items-2 p{
+    font-size: 18px;
+}
+
+
+
+.contacts {
+    display: flex;
+    gap: 20px;
+}
+
+.contacts a {
+    cursor: pointer;
+}
+.contacts .contact-button {
+    cursor: pointer;
+}
+
+.Btn {
+    width: 60px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all .3s;
+    z-index: 100;
+}
+
+.svgContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+    letter-spacing: 0.8px;
+    border-radius: 10px;
+    transition: all .3s;
+    border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.BG {
+    position: absolute;
+    content: "";
+    width: 48px;
+    height: 100%;
+    background: var(--second);
+    z-index: -2;
+    border-radius: 10px;
+    pointer-events: none;
+    transition: all .3s;
+   
+}
+
+.Btn:hover .BG {
+    background-color: lightblue;
+    transform: rotate(35deg);
+    transform-origin: bottom;
+
+   
+}
+
+.Btn:hover .svgContainer {
+    background-color: var(--third);
+    backdrop-filter: blur(4px);
+    
+}
+
+
+
+@keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translate3d(-100%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  
+  .animate__fadeInLeft {
+    animation-name: fadeInLeft;
+  }
+
+  .animate__fadeInLeft {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in;
+  }
+
+
+
+
+@keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translate3d(100%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  
+  .animate__fadeInRight {
+    animation-name: fadeInRight;
+  }
+
+  .animate__fadeInRight {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in;
+  }
+
+
+
+
+
+  @media only screen and (max-width: 768px) {
+
+
+    .mobile-menu-container{
+        gap: 50px;
+      
+    }
+
+    .mobile-nav-items-2{
+        margin-top: 25%;
+    }
+  }
+
+
+  @media  only screen and (max-width:480px) {
+    #mobile-menu{
+        width: 480px;
+    }
+
+
+    .mobile-menu-container{
+        gap: 0px;
+        margin-top: 300px;
+    }
+
+    .menu-button{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-self: center;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        margin-bottom: 180%;
+       
+      
+        
+      
+    }
+
+    .menu-button p{
+        display: flex;
+       
+        justify-content: center;
+        align-self: center;
+        align-content: flex-end;
+        align-items: flex-end;
+        margin-top: 15px;
+       
+    }
+    
+
+    
+    
+    
+  }

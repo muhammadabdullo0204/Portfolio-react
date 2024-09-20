@@ -1,0 +1,68 @@
+.body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative; 
+  }
+
+  
+  .container {
+    color: #fff;
+    text-align: center;
+    line-height: 75px;
+    z-index: 10;
+  }
+  
+  .container h1 {
+    font-size: 60px;
+    font-family: sans-serif;
+  }
+  
+  .container h3 {
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+ 
+  }
+
+
+   .container p{
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -100%, 0);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  
+  .animate__fadeInDown {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in;
+  }
+  
+  .blob-2 {
+    position: absolute;
+    width: 20px;
+    height: 8px;
+    background-color: #ff0000;
+    border-radius: 50px;
+    opacity: 0.8;
+    transform: translate(-50%, -50%);
+    transition: top 0.05s ease, left 0.05s ease;
+    z-index: 9;
+  }
+  
+
