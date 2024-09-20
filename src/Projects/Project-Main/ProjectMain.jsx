@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import right from '/Users/pcmci-tech//visual code/React/amalyot-website/src/Images/right-arrow-svgrepo-com.svg';
+import right from './right-arrow-svgrepo-com.svg';
 
 import Pagination from './Pagination/Pagination';
 import './Pagination/PaginationCss.css';

@@ -1,7 +1,7 @@
 import React from 'react'
-import car from '/Users/pcmci-tech//visual code/React/amalyot-website/src/Images/project-card-image-size 1.png'
-import black from '/Users/pcmci-tech//visual code/React/amalyot-website/src/Images/Rectangle 3.png';
-import right from '/Users/pcmci-tech//visual code/React/amalyot-website/src/Images/right-arrow-svgrepo-com.svg';
+import car from './project-card-image-size 1.png'
+import black from './Rectangle 3.png';
+import right from './right-arrow-svgrepo-com.svg';
 
 import { useNavigate } from 'react-router-dom';
 function Pagination() {

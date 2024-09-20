@@ -3,14 +3,11 @@ import './NotFound.css';
 import Frame from '../Images/Frame 14.svg'
 import Camera from '../Images/camera.svg'
 import Rectangle from '../Images/Rectangle 1 copy 4.svg'
-import Artwork from '../Images/PUT ARTWORK HERE.svg'
 import Shape3 from '../Images/Shape 3 copy 2.svg'
 import Shape2 from '../Images/Shape 2 copy 2.svg'
 import touchpad from '../Images/touchpad.svg'
 import Frame2 from '../Images/Frame 33.svg'
-import ellipse from '../Images/Ellipse 1.png'
-import mac from '../Images/mac.png'
-import not from '../Images/chromed-chromed-d-number.png'
+
 import right from '../Images/right-arrow-svgrepo-com.svg'
 import { useNavigate } from 'react-router-dom';
 
