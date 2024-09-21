@@ -482,30 +482,42 @@ body {
     .menu-button{
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-around;
-        align-self: center;
-        align-content: center;
-        align-items: center;
+        align-items: flex-end;
+        align-content: flex-end;
         width: 100%;
         position: absolute;
-        margin-bottom: 180%;
+        margin-bottom: 170%;
        
       
         
       
     }
 
+
+
     .menu-button p{
-        display: flex;
-       
+      display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
-        align-self: center;
-        align-content: flex-end;
-        align-items: flex-end;
-        margin-top: 15px;
+        align-items: center;
+        align-content: center;
+        margin-bottom: 0px;
        
     }
     
+    .menu-button #hamburger-cross{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-bottom: 0px;
+        height: 45px;
+    }
 
     
     
