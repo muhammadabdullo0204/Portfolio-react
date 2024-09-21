@@ -584,7 +584,7 @@ gap: 15px;
 
     .my-skill:not( .skills-1) {
       
-      width: 400px;
+      width: 350px;
  
       display: flex;
       flex-direction: row;
@@ -598,7 +598,7 @@ gap: 15px;
   
   }
     .skills{
-      width: 400px;
+      width: 350px;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
