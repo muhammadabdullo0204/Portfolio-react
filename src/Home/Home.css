@@ -71,14 +71,15 @@
     width: 400px;
   
   }
+
   .container h1 {
-    font-size: 40px;
+    font-size: 30px;
     font-family: sans-serif;
     
   }
   
   .container h3 {
-    font-size: 25px;
+    font-size: 15px;
     font-family: 'Courier New', Courier, monospace;
   }
   

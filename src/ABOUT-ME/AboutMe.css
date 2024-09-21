@@ -585,13 +585,26 @@ gap: 15px;
     .my-skill:not( .skills-1) {
       
       width: 400px;
-      gap: 23px;
+ 
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+
 
   
   
   }
     .skills{
       width: 400px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      align-content: center;
     }
 
     .container-about{

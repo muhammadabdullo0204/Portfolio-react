@@ -99,6 +99,7 @@ function Navbar() {
                                 to={item.path}
                                 key={index}
                                 className="nav-link"
+                                onClick={handleMenuClose}
                             >
                                 <button
                                     className={blurredButtonIndex !== null && blurredButtonIndex !== index ? 'blur' : ''}
